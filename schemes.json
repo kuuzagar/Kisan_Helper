@@ -1,0 +1,182 @@
+{
+  "disclaimer": "Demo — scheme details may be out of date. Always confirm on the official website.",
+  "profile_fields": {
+    "state": "State or UT the farmer lives in",
+    "age": "Age in years",
+    "owns_land": "true if the farmland is recorded in the farmer's own name",
+    "land_hectares": "Size of the farmer's land in hectares (1 acre = 0.4047 hectare)",
+    "pays_income_tax": "true if the farmer or anyone in the family paid income tax in the last assessment year",
+    "govt_employee_or_pensioner": "true if the farmer or a family member has a government job or draws a government pension of Rs 10,000 or more a month"
+  },
+  "schemes": [
+    {
+      "id": "pm_kisan",
+      "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+      "benefit": "Rs 6,000 a year, paid as three instalments of Rs 2,000 straight into the bank account of every landholding farmer family.",
+      "eligibility": {
+        "must_own_land": true,
+        "excludes_income_tax_payer": true,
+        "excludes_govt_employee_or_pensioner": true,
+        "notes": "Land must be in the family's name in state land records; tenant farmers and sharecroppers are not covered. Also excluded: institutional landholders, present or former holders of constitutional posts, ministers, MPs, MLAs, mayors, zila panchayat chairpersons, practising professionals (doctors, engineers, lawyers, chartered accountants, architects) and NRIs. Class IV / Group D / MTS government staff ARE allowed. Pensioners are excluded only if the pension is Rs 10,000 or more a month. eKYC is compulsory."
+      },
+      "documents": [
+        "Aadhaar card",
+        "Land record in your name (khatauni / khasra / record of rights / patta)",
+        "Bank passbook of an account linked to Aadhaar",
+        "Mobile number (for OTP and status messages)"
+      ],
+      "online_steps": [
+        "Open pmkisan.gov.in and click 'New Farmer Registration' in the Farmers Corner",
+        "Enter Aadhaar number, mobile number and state, and verify with the OTP (only on the official site)",
+        "Fill in personal details, land details (survey / khata number) and bank details; upload the land record",
+        "Submit and save the registration number",
+        "Complete eKYC: OTP eKYC on the portal, face eKYC on the PM-Kisan mobile app, or biometric eKYC at a CSC",
+        "Check approval under 'Know Your Status' on the portal"
+      ],
+      "offline_places": [
+        "Nearest Common Service Centre (CSC)",
+        "Village patwari / lekhpal / revenue officer",
+        "Block or district agriculture office (state nodal officer)"
+      ],
+      "official_website": "https://pmkisan.gov.in",
+      "helpline": "155261 or 011-24300606 (PM-KISAN helpline); Kisan Call Centre 1800-180-1551",
+      "source_url": "https://pmkisan.gov.in/Documents/RevisedPM-KISANOperationalGuidelines(English).pdf",
+      "last_checked": "2026-11-01"
+    },
+    {
+      "id": "pmfby",
+      "name": "PMFBY (Pradhan Mantri Fasal Bima Yojana) — crop insurance",
+      "benefit": "Insurance money if your notified crop is damaged by drought, flood, hailstorm, pests, disease or other natural causes. You pay only a small premium: at most 2% of the sum insured for kharif food and oilseed crops, 1.5% for rabi, 5% for annual commercial or horticultural crops. The government pays the rest.",
+      "eligibility": {
+        "must_own_land": false,
+        "notes": "Open to ALL farmers, including tenant farmers and sharecroppers, who grow a crop notified for their area in that season. Farmers with a crop loan / KCC are covered automatically unless they opt out in writing; others enrol voluntarily. Enrolment closes before the state's cut-off date (commonly 31 July for kharif and 31 December for rabi; check locally). Notified crops and areas are decided by the state."
+      },
+      "documents": [
+        "Aadhaar card",
+        "Bank passbook",
+        "Land record (khasra / record of rights), or for tenant farmers and sharecroppers the tenancy or crop-sharing agreement / declaration your state asks for",
+        "Sowing certificate or self-declaration of the crop you have sown",
+        "Mobile number"
+      ],
+      "online_steps": [
+        "Open pmfby.gov.in and click 'Farmer Corner' > 'Farmer Application' (or use the 'Crop Insurance' mobile app)",
+        "Register with your mobile number and log in with the OTP (only on the official site or app)",
+        "Choose state, district, season and crop; enter land details and upload the documents",
+        "Pay your share of the premium online",
+        "Save the application / policy number and track it under 'Application Status'",
+        "If the crop is damaged, report it within 72 hours on the app, on 14447, or to your bank or insurance company"
+      ],
+      "offline_places": [
+        "Your bank branch (farmers with a KCC or crop loan are usually enrolled by the bank; confirm there)",
+        "Nearest Common Service Centre (CSC)",
+        "Office of the insurance company appointed for your district",
+        "Block agriculture office"
+      ],
+      "official_website": "https://pmfby.gov.in",
+      "helpline": "14447 (Krishi Rakshak Portal and Helpline)",
+      "source_url": "https://pmfby.gov.in/pdf/Revised_Operational_Guidelines.pdf",
+      "last_checked": "2026-11-01"
+    },
+    {
+      "id": "kcc",
+      "name": "Kisan Credit Card (KCC)",
+      "benefit": "A low-interest farm loan card for seeds, fertiliser, labour and other crop costs, and also for dairy, poultry and fisheries. Interest is 7% a year, and only 4% if you repay on time, on crop loans up to Rs 3 lakh (being raised to Rs 5 lakh as announced in Budget 2025; ask your bank). No collateral is needed for a limit up to Rs 2 lakh.",
+      "eligibility": {
+        "must_own_land": false,
+        "min_age": 18,
+        "max_age": 75,
+        "notes": "For owner cultivators, tenant farmers, oral lessees, sharecroppers, self-help groups and joint liability groups of farmers, and dairy, poultry and fisheries farmers. Farmers above 60 need a co-borrower (usually a legal heir). The bank takes the final decision on the loan limit."
+      },
+      "documents": [
+        "Filled KCC application form (from the bank, or the one-page form on pmkisan.gov.in)",
+        "Two passport-size photographs",
+        "Identity proof (Aadhaar, voter ID, PAN or driving licence)",
+        "Address proof (Aadhaar, voter ID, ration card)",
+        "Land record certified by the revenue office; tenant farmers and sharecroppers give proof of cultivation / tenancy as the bank asks",
+        "List of crops grown with area (cropping pattern)",
+        "Security papers only if the limit is above Rs 2 lakh"
+      ],
+      "online_steps": [
+        "Open your bank's website or app and search 'Kisan Credit Card' (for example SBI YONO Krishi); fill the online form",
+        "PM-KISAN beneficiaries can download the one-page KCC form from pmkisan.gov.in (Farmers Corner > Download KCC Form) and submit it to the bank that pays their PM-KISAN money",
+        "Visit the branch once with the original documents for verification",
+        "The bank issues the KCC (a RuPay debit card) and fixes the loan limit for 5 years"
+      ],
+      "offline_places": [
+        "Any bank branch: public sector, private, regional rural bank or cooperative bank, best where you already have an account",
+        "Primary Agricultural Credit Society (PACS) in your village",
+        "Nearest Common Service Centre (CSC) or a KCC camp (Ghar Ghar KCC Abhiyan)"
+      ],
+      "official_website": "https://pmkisan.gov.in (KCC form under Farmers Corner); your bank's website for the online form",
+      "helpline": "Kisan Call Centre 1800-180-1551 (toll-free); your bank's customer care",
+      "source_url": "https://www.rbi.org.in/commonman/english/scripts/Notification.aspx?Id=2311",
+      "last_checked": "2026-11-01"
+    },
+    {
+      "id": "pm_kmy",
+      "name": "PM Kisan Maandhan Yojana (PM-KMY) — farmer pension",
+      "benefit": "A guaranteed pension of Rs 3,000 every month after age 60 for small and marginal farmers. You pay a small amount every month until 60 (Rs 55 to Rs 200, depending on your age when you join) and the central government pays the same amount into your account.",
+      "eligibility": {
+        "must_own_land": true,
+        "min_age": 18,
+        "max_age": 40,
+        "max_land_hectares": 2,
+        "excludes_income_tax_payer": true,
+        "excludes_govt_employee_or_pensioner": true,
+        "notes": "Small and marginal farmers with cultivable land up to 2 hectares in their name as per state land records, aged 18 to 40 when joining. Not for farmers already covered by NPS, EPFO, ESIC, PM-SYM or NPS-Traders, or those in the PM-KISAN exclusion list (income-tax payers, government employees, higher-pension holders, professionals). PM-KISAN beneficiaries can pay the contribution from their PM-KISAN money. Spouse gets 50% family pension after the farmer's death."
+      },
+      "documents": [
+        "Aadhaar card",
+        "Savings bank passbook or Jan Dhan account (or your PM-KISAN account)",
+        "Land record showing up to 2 hectares (khasra / khatauni)",
+        "Mobile number",
+        "Age proof (Aadhaar is usually enough)"
+      ],
+      "online_steps": [
+        "Open maandhan.in and click 'Self Enrollment'",
+        "Enter your mobile number and verify with the OTP (only on the official site)",
+        "Fill in personal, bank and land details and choose auto-debit for the monthly contribution",
+        "Pay the first contribution and download your Kisan Pension Card; note the KPAN number",
+        "Contributions are auto-debited every month until age 60; pension starts at 60"
+      ],
+      "offline_places": [
+        "Nearest Common Service Centre (CSC): enrolment is free, the operator registers you",
+        "Block or district agriculture office (state nodal officer)"
+      ],
+      "official_website": "https://maandhan.in (also pmkmy.gov.in)",
+      "helpline": "1800-267-6888 (toll-free) or 14434",
+      "source_url": "https://pmkisan.gov.in/Documents/PM-KMY%20-%20FAQs.pdf",
+      "last_checked": "2026-11-01"
+    },
+    {
+      "id": "soil_health_card",
+      "name": "Soil Health Card (SHC)",
+      "benefit": "Free testing of your field's soil and a card that shows its nutrient status (nitrogen, phosphorus, potassium, pH, organic carbon, micronutrients) with the right fertiliser dose for your crops. Saves fertiliser money and improves yield.",
+      "eligibility": {
+        "must_own_land": false,
+        "notes": "Every farmer can get one; there are no exclusions and no fee. One card per plot. Soil samples are collected in cycles by the state agriculture department, so timing depends on your state."
+      },
+      "documents": [
+        "Aadhaar or any identity card",
+        "Land details: village, survey / khasra number",
+        "Mobile number"
+      ],
+      "online_steps": [
+        "Open soilhealth.dac.gov.in or install the 'Soil Health Card' mobile app",
+        "Register as a farmer with your mobile number and verify with the OTP (only on the official site or app)",
+        "Request soil testing for your plot, or check the status of a sample already collected",
+        "Once the lab uploads the result, download or print your Soil Health Card with your sample number"
+      ],
+      "offline_places": [
+        "Village agriculture extension officer / krishi sahayak",
+        "Block agriculture office or the state soil testing laboratory",
+        "Nearest Krishi Vigyan Kendra (KVK)",
+        "Nearest Common Service Centre (CSC)"
+      ],
+      "official_website": "https://soilhealth.dac.gov.in",
+      "helpline": "Kisan Call Centre 1800-180-1551 (toll-free)",
+      "source_url": "https://soilhealth.dac.gov.in/home",
+      "last_checked": "2026-11-01"
+    }
+  ]
+}
